@@ -1,0 +1,59 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 200px;
+  background-color: #19aae4;
+  transition: 0.3 ease;
+}
+
+.logo {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-items .nav-links {
+  font-size: 17px;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-items .nav-links:hover {
+  background-color: white;
+  color: #2f2e41;
+  border-radius: 5px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+  .logo {
+    width: 130px;
+    height: 70px;
+  }
+  .hamburger-wrapper {
+    display: block;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .nav-items {
+    display: none;
+  }
+  /* THIS IS A CLASS THAT TELLS WHAT TO DO WHEN THE NAVBAR IS OPENEDOR CLICKED */
+  .open-nav-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 100%;
+  }
+  .nav-links {
+    text-align: right;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

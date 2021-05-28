@@ -1,0 +1,257 @@
+@import "./navbar.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.slide1 img {
+  width: 100%;
+}
+.slide2 img {
+  width: 100%;
+  display: none;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  background-image: url(/assets/img/ecommerce-3640321_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slide1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15rem;
+  gap: 2rem;
+}
+.text {
+  font-size: 2.5rem;
+  text-align: center;
+
+  span {
+    color: #073620b4;
+  }
+}
+.shop-btn {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 255, 200),
+    rgb(78, 218, 44)
+  );
+  border: none;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 10rem;
+  font-size: 1.1rem;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.new-arrivals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+
+  .head {
+    font-size: 3.5rem;
+    color: #000;
+    font-family: sans-serif;
+  }
+  .paragraph {
+    color: red;
+  }
+}
+
+// section two
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+
+  img {
+    width: 100%;
+  }
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(47, 228, 168);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.card-btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 10px;
+  border-radius: 5rem;
+}
+.view-btn {
+  margin-left: 0.2rem;
+  margin-top: 1rem;
+  width: 8rem;
+  font-size: 15px;
+  color: #000;
+}
+.add-btn {
+  margin-left: 0.2rem;
+  margin-top: 1rem;
+  width: 8rem;
+  font-size: 15px;
+  background: darkgoldenrod;
+  color: #000;
+}
+footer {
+  background-color: rgb(47, 228, 168);
+  height: 100px;
+  margin-top: 5rem;
+
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+}
+.footer-contents {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  justify-content: center;
+}
+.icon {
+  display: flex;
+  gap: 4rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+@media (min-width: 894px) {
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: center;
+  }
+  .hamburger-wrapper {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .slideshow-container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    background-image: url(/assets/img/ecommerce-3640321_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+  }
+  .content-two {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+
+    img {
+      width: 100%;
+    }
+    .card-btn {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 10px;
+      border-radius: 5rem;
+    }
+    .view-btn {
+      margin-left: 0.2rem;
+      margin-top: 1rem;
+      width: 8rem;
+      font-size: 15px;
+      color: #000;
+    }
+    .add-btn {
+      margin-left: 0.2rem;
+      margin-top: 1rem;
+      width: 8rem;
+      font-size: 15px;
+      background: darkgoldenrod;
+      color: #000;
+    }
+    // .icon {
+    //   display: flex;
+    //   flex-direction: row;
+    //   gap: 4rem;
+    //   justify-content: space-between;
+    //   margin-left: 5rem;
+    // }
+  }
+}

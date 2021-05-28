@@ -1,0 +1,58 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 200px;
+  background-color: rgb(25, 170, 228);
+  transition: 0.3 ease;
+}
+.logo {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+// .hamburger-wrapper {
+//   display: flex;
+// }
+.nav-items .nav-links {
+  font-size: 17px;
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.nav-items .nav-links:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(47, 46, 65);
+  border-radius: 5px;
+}
+/* MEDIA QUERY */
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+  .logo {
+    width: 130px;
+    height: 70px;
+  }
+  .hamburger-wrapper {
+    display: block;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+  .nav-items {
+    display: none;
+  }
+  /* THIS IS A CLASS THAT TELLS WHAT TO DO WHEN THE NAVBAR IS OPENEDOR CLICKED */
+  .open-nav-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 100%;
+  }
+  .nav-links {
+    text-align: right;
+  }
+}
